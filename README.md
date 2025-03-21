@@ -1,2 +1,2 @@
-# HW-House-Types
-Home Work 1 - House Types
+# HW-House Types
+Homework 1 - House Types
