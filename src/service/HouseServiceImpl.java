@@ -7,6 +7,7 @@ import model.Villa;
 import repository.HouseRepository;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class HouseServiceImpl implements HouseService {
     private final HouseRepository houseRepository;
@@ -46,7 +47,10 @@ public class HouseServiceImpl implements HouseService {
     }
 
     @Override
-    public List<House> filterHousesByRoomsAndLivingRooms(int minRooms, int minLivingRooms) {
-        return null;
+    public List<House> filterHousesByRoomAndLivingRoom(int minRooms, int minLivingRooms, List<? extends House> houses) {
+        return houses.stream()
+                .filter(house -> house.getRoomCount() >= minRooms)
+                .filter(house -> house.getLivingRoomCount() >= minLivingRooms)
+                .collect(Collectors.toList());
     }
 }

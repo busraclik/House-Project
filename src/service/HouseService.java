@@ -22,5 +22,5 @@ public interface HouseService {
 
     double averageTotalSquareMeter(List<? extends House> houses);
 
-    List<House> filterHousesByRoomsAndLivingRooms(int minRooms, int minLivingRooms);
+    List<House> filterHousesByRoomAndLivingRoom(int minRooms, int minLivingRooms, List<? extends House> houses);
 }
