@@ -2,7 +2,6 @@ import model.House;
 import repository.HouseRepository;
 import service.HouseService;
 import service.HouseServiceImpl;
-
 import java.util.List;
 
 public class Main {
@@ -41,12 +40,12 @@ public class Main {
 
         System.out.println("----------------------------");
         System.out.println("Filtered list by room and living room");
-        print(houseService.filterHousesByRoomAndLivingRoom(7,2, houseService.getHouseList()));
+        print(houseService.filterHousesByRoomAndLivingRoom(7, 2, houseService.getHouseList()));
     }
 
     public static void print(List<? extends House> houses) {
-        if (houses.size() < 1)
+        if (houses.isEmpty())
             System.out.println("There is nothing to show...");
-        houses.stream().forEach(System.out::println);
+        houses.forEach(System.out::println);
     }
 }

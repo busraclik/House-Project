@@ -1,11 +1,9 @@
 package service;
-
 import model.Apartment;
 import model.HolidayHome;
 import model.House;
 import model.Villa;
 import repository.HouseRepository;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
