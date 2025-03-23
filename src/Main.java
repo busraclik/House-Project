@@ -1,8 +1,8 @@
-import formatter.CurrencyFormatter;
-import model.House;
-import repository.HouseRepository;
-import service.HouseService;
-import service.HouseServiceImpl;
+import main.java.formatter.CurrencyFormatter;
+import main.java.model.House;
+import main.java.repository.HouseRepository;
+import main.java.service.HouseService;
+import main.java.service.HouseServiceImpl;
 
 import java.util.List;
 

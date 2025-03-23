@@ -1,10 +1,10 @@
-package service;
+package main.java.service;
 
-import model.Apartment;
-import model.HolidayHome;
-import model.House;
-import model.Villa;
-import repository.HouseRepository;
+import main.java.model.Apartment;
+import main.java.model.HolidayHome;
+import main.java.model.House;
+import main.java.model.Villa;
+import main.java.repository.HouseRepository;
 
 import java.math.BigDecimal;
 import java.util.List;

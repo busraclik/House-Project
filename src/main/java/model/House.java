@@ -1,6 +1,6 @@
-package model;
+package main.java.model;
 
-import formatter.CurrencyFormatter;
+import main.java.formatter.CurrencyFormatter;
 
 import java.math.BigDecimal;
 

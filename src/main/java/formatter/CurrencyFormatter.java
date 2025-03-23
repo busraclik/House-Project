@@ -1,4 +1,4 @@
-package formatter;
+package main.java.formatter;
 
 import java.math.BigDecimal;
 import java.text.NumberFormat;

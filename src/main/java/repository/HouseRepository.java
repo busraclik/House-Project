@@ -1,9 +1,9 @@
-package repository;
+package main.java.repository;
 
-import model.Apartment;
-import model.HolidayHome;
-import model.House;
-import model.Villa;
+import main.java.model.Apartment;
+import main.java.model.HolidayHome;
+import main.java.model.House;
+import main.java.model.Villa;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

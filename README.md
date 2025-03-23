@@ -13,7 +13,7 @@ Bu proje, farklı türde evlerin (Daire, Villa, Yazlık) yönetildiği bir emlak
     Oda sayısı ve salon sayısına göre evleri filtreleme.
 
 Programın Çıktısı 1 :
-![Program Çıktısı](./src/resources/images/img1.png)
+![Program Çıktısı](./src/main/resources/images/img1.png)
 
 Programın Çıktısı 2 :
-![Program Çıktısı](./src/resources/images/img2.png)
+![Program Çıktısı](./src/main/resources/images/img2.png)
