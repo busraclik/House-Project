@@ -4,6 +4,8 @@ import model.Apartment;
 import model.HolidayHome;
 import model.House;
 import model.Villa;
+
+import java.math.BigDecimal;
 import java.util.List;
 
 public interface HouseService {
@@ -15,7 +17,7 @@ public interface HouseService {
 
     List<HolidayHome> getHolidayHomeList();
 
-    double totalPrice(List<? extends House> houses);
+    BigDecimal totalPrice(List<? extends House> houses);
 
     double averageTotalSquareMeter(List<? extends House> houses);
 

@@ -1,18 +1,21 @@
 package model;
 
+import formatter.CurrencyFormatter;
+
+import java.math.BigDecimal;
+
 public class House {
     private int roomCount;
     private int livingRoomCount;
-    private double price;
+    private BigDecimal price;
     private double squareMeter;
 
-    public House(int roomCount, int livingRoomCount, double price, double squareMeter) {
+    public House(int roomCount, int livingRoomCount, BigDecimal price, double squareMeter) {
         this.roomCount = roomCount;
         this.livingRoomCount = livingRoomCount;
         this.price = price;
         this.squareMeter = squareMeter;
     }
-
 
     public int getRoomCount() {
         return roomCount;
@@ -22,7 +25,7 @@ public class House {
         return livingRoomCount;
     }
 
-    public double getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
@@ -32,11 +35,12 @@ public class House {
 
     @Override
     public String toString() {
-        return  "House Type : " + this.getClass().getSimpleName() +
-                ", "+
+        return "House Type : " + this.getClass().getSimpleName() +
+                ", " +
                 " Rooms = " + roomCount +
                 ", Living Rooms = " + livingRoomCount +
-                ", Price = " + price +
-                ", Square Meter = " + squareMeter;
+                ", Price = " + CurrencyFormatter.formatCurrency(price) +
+                ", Square Meter = " + String.format("%.2f m²", squareMeter);
     }
+
 }

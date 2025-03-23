@@ -1,9 +1,12 @@
 package service;
+
 import model.Apartment;
 import model.HolidayHome;
 import model.House;
 import model.Villa;
 import repository.HouseRepository;
+
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -35,8 +38,10 @@ public class HouseServiceImpl implements HouseService {
     }
 
     @Override
-    public double totalPrice(List<? extends House> houses) {
-        return houses.stream().mapToDouble(House::getPrice).sum();
+    public BigDecimal totalPrice(List<? extends House> houses) {
+        return houses.stream()
+                .map(House::getPrice)
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
     }
 
     @Override
