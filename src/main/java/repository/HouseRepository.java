@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HouseRepository {
-    //Mock data is created in this class
+    //Mock data is created in this class.
     private final List<House> houseList = new ArrayList<>();
 
     public HouseRepository() {
