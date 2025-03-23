@@ -1,6 +1,6 @@
 # House Types
-
-## Bu proje, farklı türde evlerin (Daire, Villa, Yazlık) yönetildiği bir emlak sistemini simüle eder. Her ev türü ve tüm evler için toplam fiyat ve ortalama metrekare hesaplamaları yapılır. Ayrıca, evleri oda sayısı ve salon sayısına göre filtreleyebilirsiniz.
+ 
+Bu proje, farklı türde evlerin (Daire, Villa, Yazlık) yönetildiği bir emlak sistemini simüle eder. Her ev türü ve tüm evler için toplam fiyat ve ortalama metrekare hesaplamaları yapılır. Ayrıca, evleri oda sayısı ve salon sayısına göre filtreleyebilirsiniz.
 
 Özellikler
 
