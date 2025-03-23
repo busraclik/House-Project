@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HouseRepository {
-    //The data here represents data pulled from the database.
+    //Mock data is created in this class
     private final List<House> houseList = new ArrayList<>();
 
     public HouseRepository() {
@@ -28,7 +28,6 @@ public class HouseRepository {
 
     }
 
-    //bu kısım generic yazılabilir yazılsın mı? kalsın mı küçük bir projeyi karmaşık hale getirmemek adına?
     public List<House> getHouseList() {
         return houseList;
     }

@@ -10,7 +10,6 @@ public class Apartment extends House {
         this.floor = floor;
     }
 
-
     @Override
     public String toString() {
         return super.toString() + ", Floor : " + this.floor;
