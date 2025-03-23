@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HouseRepository {
+    //The data here represents data pulled from the database.
     private final List<House> houseList = new ArrayList<>();
 
     public HouseRepository() {
